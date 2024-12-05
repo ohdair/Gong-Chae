@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh; /* 화면 전체 높이를 차지 */
+  width: 100vw; /* 화면 전체 너비를 차지 */
+  overflow: hidden; /* 스크롤바 제거 */
+}
+
+#map {
+  flex: 1; /* 남은 모든 공간을 차지 */
+  height: 100%; /* 부모 요소의 전체 높이를 사용 */
+  width: 100%; /* 부모 요소의 전체 너비를 사용 */
+  position: relative; /* 사이드바와 충돌 방지 */
+}
+
+.button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* 사이드바 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* 처음에는 화면 밖으로 완전히 숨김 */
+  width: 300px;
+  height: 100%;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* 스크롤바 숨기기 */
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* 열릴 때 화면에 표시 */
+  overflow-y: auto; /* 스크롤 가능 */
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content h3,
+.sidebar-content h4 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.sidebar-content ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-content li {
+  margin: 5px 0;
+}
+
+.sidebar-content button.navigate-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.sidebar-content button.navigate-button:hover {
+  background-color: #3d556e;
+  color: white;
+}
+
+#sidebarBody {
+  margin-top: 20px;
+}
+
+.sidebar-content h3 {
+  margin-bottom: 15px;
+}
+
+/* 토글 버튼 */
+.toggle-button {
+  position: fixed;
+  top: 50%;
+  left: 0px; /* 기본적으로 사이드바가 숨겨진 상태에서 위치 */
+  transform: translate(-50%, -30%);
+  width: 40px;
+  height: 40px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1100; /* 사이드바보다 위에 위치 */
+  transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #2c3e50;
+  transform: translate(-50%, -30%) scale(1.1);
+}
+
+/* 스크롤바 조건부 표시 */
+.sidebar::-webkit-scrollbar {
+  display: none; /* 기본적으로 숨김 */
+}
+
+.sidebar.open::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar.open::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 4px;
+}
+
+.sidebar.open::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+
+.reset-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2c3e50;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 5px #05101b;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1000;
+  background-image: url("marker.png"); /* 마커 아이콘 이미지 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chart-panel {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  width: 500px;
+  height: 80%;
+  max-height: 80vh; /* 화면의 80% 높이까지만 사용 */
+  background: #2c3e50ec;
+  border: 1px solid #0e1925;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 전체 영역에서 스크롤 */
+}
+
+.chart-panel #commerce-zone {
+  /* margin: 0 0 10px; */
+  font-weight: bold;
+  color: #f1c40f;
+  text-align: center;
+}
+
+.chart-panel #chart-panel-title,
+#barChartCanvas-content {
+  /* margin: 0 0 10px; */
+  font-weight: bold;
+  color: #f1c40fe8;
+  text-align: left;
+}
+
+.chart-panel-content h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* 패널 내용에 스크롤 추가 */
+.chart-panel-content {
+  padding: 0 10px 0px 10px;
+  overflow-y: scroll; /* 세로 스크롤 추가 */
+  max-height: calc(80vh - 60px); /* 팝업 높이에서 헤더나 버튼 공간 제외 */
+  scrollbar-width: none; /* 스크롤바 숨기기 (Firefox) */
+}
+
+.chart-panel-content::-webkit-scrollbar {
+  display: none; /* 스크롤바 숨기기 (Chrome, Edge, Safari) */
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar-list {
+  padding: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+}
+
+.item-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item-subtitle {
+  font-size: 12px;
+  color: gray;
+}
+
+.item-info {
+  margin-left: 5px;
+}
+
+.item-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #ffbf00;
+  border-radius: 50%;
+  font-size: 12px;
+  /* font-weight: bold; */
+  color: white;
+}
+
+/* ------------------- 15:15 12월 4일 ------------------- */
+
+/* 기본 팝업 스타일 */
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* 팝업 내용 */
+.alert-content {
+  background-color: #2c3e50;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+}
+
+/* 숨김 처리 */
+.hidden {
+  display: none;
+}
+
+/* 버튼 스타일 */
+.alert button {
+  background-color: #34495e;
+  color: #ffbf00;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.alert button:hover {
+  background-color: #3d556e;
+}
+
+/* 기본 설정 */
+@font-face {
+  font-family: "MoneygraphyPixel";
+  src: url("./Moneygraphy-Pixel.eot"); /* IE9 이하 호환 */
+  src: url("./Moneygraphy-Pixel.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./Moneygraphy-Pixel.woff2") format("woff2"),
+    /* Modern Browsers */ url("./Moneygraphy-Pixel.woff") format("woff"); /* Older Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 모든 요소 기본 설정 */
+* {
+  font-family: "MoneygraphyPixel", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body 기본 설정 */
+body {
+  font-family: "MoneygraphyPixel", sans-serif;
+}
+
+/* 제목 스타일 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800; /* Extra Bold */
+  margin-bottom: 10px;
+}
+
+/* 본문 텍스트 */
+p,
+li,
+span {
+  font-weight: 400; /* Regular */
+}
+
+/* 강조 텍스트 */
+strong {
+  font-weight: 700; /* Bold */
+}
+
+/* 모든 요소에서 포커스 스타일 제거 */
+* {
+  outline: none !important;
+}
+
+/* 클릭 후 커서 깜박임 제거 */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

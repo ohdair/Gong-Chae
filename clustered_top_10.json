@@ -1,0 +1,1068 @@
+{
+  "0": [
+    {
+      "Cluster": 0.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 10421345969,
+      "Number_of_Stores": 60,
+      "Average_Sales_Per_Store": 173689099.48333332
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 14497356895,
+      "Number_of_Stores": 87,
+      "Average_Sales_Per_Store": 166636286.1494253
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 11584247131,
+      "Number_of_Stores": 76,
+      "Average_Sales_Per_Store": 152424304.35526314
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300024",
+      "SCN": "운동/경기용품",
+      "Sales_Amount": 2491022338,
+      "Number_of_Stores": 19,
+      "Average_Sales_Per_Store": 131106438.84210527
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 15237019380,
+      "Number_of_Stores": 119,
+      "Average_Sales_Per_Store": 128042179.66386555
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 758206386,
+      "Number_of_Stores": 6,
+      "Average_Sales_Per_Store": 126367731.0
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 1517236124,
+      "Number_of_Stores": 14,
+      "Average_Sales_Per_Store": 108374008.85714285
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS200017",
+      "SCN": "골프연습장",
+      "Sales_Amount": 517424664,
+      "Number_of_Stores": 5,
+      "Average_Sales_Per_Store": 103484932.8
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300016",
+      "SCN": "안경",
+      "Sales_Amount": 1278352828,
+      "Number_of_Stores": 13,
+      "Average_Sales_Per_Store": 98334832.92307693
+    },
+    {
+      "Cluster": 0.0,
+      "SC": "CS300001",
+      "SCN": "슈퍼마켓",
+      "Sales_Amount": 12365599392,
+      "Number_of_Stores": 160,
+      "Average_Sales_Per_Store": 77284996.2
+    }
+  ],
+  "1": [
+    {
+      "Cluster": 1.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 1854903226,
+      "Number_of_Stores": 4,
+      "Average_Sales_Per_Store": 463725806.5
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200019",
+      "SCN": "PC방",
+      "Sales_Amount": 1025476074,
+      "Number_of_Stores": 3,
+      "Average_Sales_Per_Store": 341825358.0
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 13459196280,
+      "Number_of_Stores": 66,
+      "Average_Sales_Per_Store": 203927216.36363637
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200001",
+      "SCN": "일반교습학원",
+      "Sales_Amount": 94969828960,
+      "Number_of_Stores": 636,
+      "Average_Sales_Per_Store": 149323630.44025156
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 7010409978,
+      "Number_of_Stores": 56,
+      "Average_Sales_Per_Store": 125185892.46428572
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 5998795981,
+      "Number_of_Stores": 49,
+      "Average_Sales_Per_Store": 122424407.7755102
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 9985224457,
+      "Number_of_Stores": 95,
+      "Average_Sales_Per_Store": 105107625.8631579
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200002",
+      "SCN": "외국어학원",
+      "Sales_Amount": 35005718271,
+      "Number_of_Stores": 334,
+      "Average_Sales_Per_Store": 104807539.73353294
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS200005",
+      "SCN": "스포츠 강습",
+      "Sales_Amount": 2734567581,
+      "Number_of_Stores": 28,
+      "Average_Sales_Per_Store": 97663127.89285715
+    },
+    {
+      "Cluster": 1.0,
+      "SC": "CS100001",
+      "SCN": "한식음식점",
+      "Sales_Amount": 36254782068,
+      "Number_of_Stores": 376,
+      "Average_Sales_Per_Store": 96422292.73404256
+    }
+  ],
+  "2": [
+    {
+      "Cluster": 2.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 328243086077,
+      "Number_of_Stores": 1427,
+      "Average_Sales_Per_Store": 230023185.75823405
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 4102630229,
+      "Number_of_Stores": 18,
+      "Average_Sales_Per_Store": 227923901.6111111
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 98062057041,
+      "Number_of_Stores": 484,
+      "Average_Sales_Per_Store": 202607555.86983472
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 69584009927,
+      "Number_of_Stores": 378,
+      "Average_Sales_Per_Store": 184084682.34656084
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 80578043482,
+      "Number_of_Stores": 527,
+      "Average_Sales_Per_Store": 152899513.24857685
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300011",
+      "SCN": "일반의류",
+      "Sales_Amount": 291848650090,
+      "Number_of_Stores": 2360,
+      "Average_Sales_Per_Store": 123664682.24152543
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300022",
+      "SCN": "화장품",
+      "Sales_Amount": 190280170438,
+      "Number_of_Stores": 1657,
+      "Average_Sales_Per_Store": 114834140.27640314
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS200008",
+      "SCN": "한의원",
+      "Sales_Amount": 26141802224,
+      "Number_of_Stores": 236,
+      "Average_Sales_Per_Store": 110770348.40677966
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300021",
+      "SCN": "문구",
+      "Sales_Amount": 21916679573,
+      "Number_of_Stores": 198,
+      "Average_Sales_Per_Store": 110690300.87373738
+    },
+    {
+      "Cluster": 2.0,
+      "SC": "CS300014",
+      "SCN": "신발",
+      "Sales_Amount": 26321658605,
+      "Number_of_Stores": 244,
+      "Average_Sales_Per_Store": 107875650.02049181
+    }
+  ],
+  "3": [
+    {
+      "Cluster": 3.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 24230691267,
+      "Number_of_Stores": 89,
+      "Average_Sales_Per_Store": 272254958.05617976
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300008",
+      "SCN": "수산물판매",
+      "Sales_Amount": 5111835253,
+      "Number_of_Stores": 23,
+      "Average_Sales_Per_Store": 222253706.6521739
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 183418247107,
+      "Number_of_Stores": 1045,
+      "Average_Sales_Per_Store": 175519853.6909091
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 121893679292,
+      "Number_of_Stores": 707,
+      "Average_Sales_Per_Store": 172409730.25742576
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 14197094463,
+      "Number_of_Stores": 93,
+      "Average_Sales_Per_Store": 152656929.70967743
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 64096346961,
+      "Number_of_Stores": 463,
+      "Average_Sales_Per_Store": 138437034.47300217
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 107885429818,
+      "Number_of_Stores": 828,
+      "Average_Sales_Per_Store": 130296412.8236715
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300006",
+      "SCN": "미곡판매",
+      "Sales_Amount": 1721032035,
+      "Number_of_Stores": 14,
+      "Average_Sales_Per_Store": 122930859.64285715
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300024",
+      "SCN": "운동/경기용품",
+      "Sales_Amount": 33886177144,
+      "Number_of_Stores": 286,
+      "Average_Sales_Per_Store": 118483136.86713287
+    },
+    {
+      "Cluster": 3.0,
+      "SC": "CS300021",
+      "SCN": "문구",
+      "Sales_Amount": 36406810653,
+      "Number_of_Stores": 324,
+      "Average_Sales_Per_Store": 112366699.5462963
+    }
+  ],
+  "4": [
+    {
+      "Cluster": 4.0,
+      "SC": "CS300014",
+      "SCN": "신발",
+      "Sales_Amount": 800321027,
+      "Number_of_Stores": 4,
+      "Average_Sales_Per_Store": 200080256.75
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 49299898124,
+      "Number_of_Stores": 330,
+      "Average_Sales_Per_Store": 149393630.6787879
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 13394850591,
+      "Number_of_Stores": 93,
+      "Average_Sales_Per_Store": 144030651.51612905
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 28237930239,
+      "Number_of_Stores": 229,
+      "Average_Sales_Per_Store": 123309739.03493449
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 106338340835,
+      "Number_of_Stores": 867,
+      "Average_Sales_Per_Store": 122650912.15109573
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 21069061261,
+      "Number_of_Stores": 186,
+      "Average_Sales_Per_Store": 113274522.90860215
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300006",
+      "SCN": "미곡판매",
+      "Sales_Amount": 2581744987,
+      "Number_of_Stores": 23,
+      "Average_Sales_Per_Store": 112249782.04347827
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300025",
+      "SCN": "자전거 및 기타운송장비",
+      "Sales_Amount": 1825213063,
+      "Number_of_Stores": 18,
+      "Average_Sales_Per_Store": 101400725.72222222
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300032",
+      "SCN": "가전제품",
+      "Sales_Amount": 3718216793,
+      "Number_of_Stores": 38,
+      "Average_Sales_Per_Store": 97847810.34210527
+    },
+    {
+      "Cluster": 4.0,
+      "SC": "CS300019",
+      "SCN": "의료기기",
+      "Sales_Amount": 1944763192,
+      "Number_of_Stores": 20,
+      "Average_Sales_Per_Store": 97238159.6
+    }
+  ],
+  "5": [
+    {
+      "Cluster": 5.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 119712685713,
+      "Number_of_Stores": 495,
+      "Average_Sales_Per_Store": 241843809.52121213
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 219820854276,
+      "Number_of_Stores": 1241,
+      "Average_Sales_Per_Store": 177132034.06607574
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 276568799763,
+      "Number_of_Stores": 1576,
+      "Average_Sales_Per_Store": 175487817.10850254
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 139000710539,
+      "Number_of_Stores": 832,
+      "Average_Sales_Per_Store": 167068161.70552886
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 160226097786,
+      "Number_of_Stores": 1032,
+      "Average_Sales_Per_Store": 155257846.69186047
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 56886103326,
+      "Number_of_Stores": 369,
+      "Average_Sales_Per_Store": 154162881.64227644
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300008",
+      "SCN": "수산물판매",
+      "Sales_Amount": 21614504133,
+      "Number_of_Stores": 152,
+      "Average_Sales_Per_Store": 142200685.08552632
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300021",
+      "SCN": "문구",
+      "Sales_Amount": 49675021385,
+      "Number_of_Stores": 363,
+      "Average_Sales_Per_Store": 136845788.93939394
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300019",
+      "SCN": "의료기기",
+      "Sales_Amount": 17534517383,
+      "Number_of_Stores": 153,
+      "Average_Sales_Per_Store": 114604688.77777778
+    },
+    {
+      "Cluster": 5.0,
+      "SC": "CS300026",
+      "SCN": "완구",
+      "Sales_Amount": 1554836289,
+      "Number_of_Stores": 14,
+      "Average_Sales_Per_Store": 111059734.92857143
+    }
+  ],
+  "6": [
+    {
+      "Cluster": 6.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 86707820376,
+      "Number_of_Stores": 518,
+      "Average_Sales_Per_Store": 167389614.62548262
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 118275217307,
+      "Number_of_Stores": 805,
+      "Average_Sales_Per_Store": 146925735.78509316
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 27430973549,
+      "Number_of_Stores": 214,
+      "Average_Sales_Per_Store": 128182119.38785046
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300003",
+      "SCN": "컴퓨터및주변장치판매",
+      "Sales_Amount": 19724674420,
+      "Number_of_Stores": 165,
+      "Average_Sales_Per_Store": 119543481.33333333
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 176940154856,
+      "Number_of_Stores": 1502,
+      "Average_Sales_Per_Store": 117803032.52729693
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300001",
+      "SCN": "슈퍼마켓",
+      "Sales_Amount": 136074274072,
+      "Number_of_Stores": 1707,
+      "Average_Sales_Per_Store": 79715450.54012889
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 26946598683,
+      "Number_of_Stores": 364,
+      "Average_Sales_Per_Store": 74029117.26098901
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS200025",
+      "SCN": "자동차수리",
+      "Sales_Amount": 37138553318,
+      "Number_of_Stores": 511,
+      "Average_Sales_Per_Store": 72678186.53228962
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS300016",
+      "SCN": "안경",
+      "Sales_Amount": 4845853044,
+      "Number_of_Stores": 75,
+      "Average_Sales_Per_Store": 64611373.92
+    },
+    {
+      "Cluster": 6.0,
+      "SC": "CS200008",
+      "SCN": "한의원",
+      "Sales_Amount": 8143718359,
+      "Number_of_Stores": 133,
+      "Average_Sales_Per_Store": 61230965.10526316
+    }
+  ],
+  "7": [
+    {
+      "Cluster": 7.0,
+      "SC": "CS200019",
+      "SCN": "PC방",
+      "Sales_Amount": 1553070572,
+      "Number_of_Stores": 10,
+      "Average_Sales_Per_Store": 155307057.2
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 57293389703,
+      "Number_of_Stores": 383,
+      "Average_Sales_Per_Store": 149591095.83028722
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300025",
+      "SCN": "자전거 및 기타운송장비",
+      "Sales_Amount": 1177681452,
+      "Number_of_Stores": 8,
+      "Average_Sales_Per_Store": 147210181.5
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 36529907478,
+      "Number_of_Stores": 259,
+      "Average_Sales_Per_Store": 141042113.8146718
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 81171276489,
+      "Number_of_Stores": 593,
+      "Average_Sales_Per_Store": 136882422.40978077
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 15905129668,
+      "Number_of_Stores": 120,
+      "Average_Sales_Per_Store": 132542747.23333333
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300006",
+      "SCN": "미곡판매",
+      "Sales_Amount": 2979266550,
+      "Number_of_Stores": 26,
+      "Average_Sales_Per_Store": 114587175.0
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300024",
+      "SCN": "운동/경기용품",
+      "Sales_Amount": 3928383951,
+      "Number_of_Stores": 44,
+      "Average_Sales_Per_Store": 89281453.43181819
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 7370938790,
+      "Number_of_Stores": 83,
+      "Average_Sales_Per_Store": 88806491.44578314
+    },
+    {
+      "Cluster": 7.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 14310321535,
+      "Number_of_Stores": 175,
+      "Average_Sales_Per_Store": 81773265.91428572
+    }
+  ],
+  "8": [
+    {
+      "Cluster": 8.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 76204000845,
+      "Number_of_Stores": 368,
+      "Average_Sales_Per_Store": 207076089.2527174
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 74413803385,
+      "Number_of_Stores": 380,
+      "Average_Sales_Per_Store": 195825798.38157895
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 104653591557,
+      "Number_of_Stores": 569,
+      "Average_Sales_Per_Store": 183925468.46572936
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 46708694149,
+      "Number_of_Stores": 274,
+      "Average_Sales_Per_Store": 170469686.6751825
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS300032",
+      "SCN": "가전제품",
+      "Sales_Amount": 2358814309,
+      "Number_of_Stores": 17,
+      "Average_Sales_Per_Store": 138753782.88235295
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS200019",
+      "SCN": "PC방",
+      "Sales_Amount": 3547935262,
+      "Number_of_Stores": 32,
+      "Average_Sales_Per_Store": 110872976.9375
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS200036",
+      "SCN": "고시원",
+      "Sales_Amount": 878860228,
+      "Number_of_Stores": 8,
+      "Average_Sales_Per_Store": 109857528.5
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS300014",
+      "SCN": "신발",
+      "Sales_Amount": 13306008125,
+      "Number_of_Stores": 127,
+      "Average_Sales_Per_Store": 104771717.51968504
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS200008",
+      "SCN": "한의원",
+      "Sales_Amount": 16887316335,
+      "Number_of_Stores": 163,
+      "Average_Sales_Per_Store": 103603167.6993865
+    },
+    {
+      "Cluster": 8.0,
+      "SC": "CS300036",
+      "SCN": "조명용품",
+      "Sales_Amount": 4293843305,
+      "Number_of_Stores": 43,
+      "Average_Sales_Per_Store": 99856821.04651164
+    }
+  ],
+  "9": [
+    {
+      "Cluster": 9.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 67370512783,
+      "Number_of_Stores": 365,
+      "Average_Sales_Per_Store": 184576747.35068494
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 85350937818,
+      "Number_of_Stores": 474,
+      "Average_Sales_Per_Store": 180065269.65822786
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 103192175428,
+      "Number_of_Stores": 670,
+      "Average_Sales_Per_Store": 154018172.280597
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 33442121415,
+      "Number_of_Stores": 227,
+      "Average_Sales_Per_Store": 147322120.7709251
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300019",
+      "SCN": "의료기기",
+      "Sales_Amount": 2885529427,
+      "Number_of_Stores": 20,
+      "Average_Sales_Per_Store": 144276471.35
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300031",
+      "SCN": "가구",
+      "Sales_Amount": 9005880103,
+      "Number_of_Stores": 66,
+      "Average_Sales_Per_Store": 136452728.83333334
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 19800131119,
+      "Number_of_Stores": 147,
+      "Average_Sales_Per_Store": 134694769.5170068
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300006",
+      "SCN": "미곡판매",
+      "Sales_Amount": 5689792769,
+      "Number_of_Stores": 45,
+      "Average_Sales_Per_Store": 126439839.31111111
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300008",
+      "SCN": "수산물판매",
+      "Sales_Amount": 65818135259,
+      "Number_of_Stores": 523,
+      "Average_Sales_Per_Store": 125847294.9502868
+    },
+    {
+      "Cluster": 9.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 71499298316,
+      "Number_of_Stores": 617,
+      "Average_Sales_Per_Store": 115882169.06969206
+    }
+  ],
+  "10": [
+    {
+      "Cluster": 10.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 2899093642,
+      "Number_of_Stores": 9,
+      "Average_Sales_Per_Store": 322121515.7777778
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300008",
+      "SCN": "수산물판매",
+      "Sales_Amount": 57087072261,
+      "Number_of_Stores": 205,
+      "Average_Sales_Per_Store": 278473523.22439027
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 10623721288,
+      "Number_of_Stores": 44,
+      "Average_Sales_Per_Store": 241448211.0909091
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300025",
+      "SCN": "자전거 및 기타운송장비",
+      "Sales_Amount": 893964367,
+      "Number_of_Stores": 4,
+      "Average_Sales_Per_Store": 223491091.75
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 10414659772,
+      "Number_of_Stores": 57,
+      "Average_Sales_Per_Store": 182713329.33333334
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300010",
+      "SCN": "반찬가게",
+      "Sales_Amount": 21340716766,
+      "Number_of_Stores": 120,
+      "Average_Sales_Per_Store": 177839306.38333333
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300028",
+      "SCN": "화초",
+      "Sales_Amount": 4379618815,
+      "Number_of_Stores": 26,
+      "Average_Sales_Per_Store": 168446877.5
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 2156741486,
+      "Number_of_Stores": 14,
+      "Average_Sales_Per_Store": 154052963.2857143
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS200025",
+      "SCN": "자동차수리",
+      "Sales_Amount": 2057895909,
+      "Number_of_Stores": 15,
+      "Average_Sales_Per_Store": 137193060.6
+    },
+    {
+      "Cluster": 10.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 3433990816,
+      "Number_of_Stores": 27,
+      "Average_Sales_Per_Store": 127184845.03703703
+    }
+  ],
+  "11": [
+    {
+      "Cluster": 11.0,
+      "SC": "CS300025",
+      "SCN": "자전거 및 기타운송장비",
+      "Sales_Amount": 718725002,
+      "Number_of_Stores": 3,
+      "Average_Sales_Per_Store": 239575000.66666666
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 14262350187,
+      "Number_of_Stores": 72,
+      "Average_Sales_Per_Store": 198088197.04166666
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300031",
+      "SCN": "가구",
+      "Sales_Amount": 6880374882,
+      "Number_of_Stores": 39,
+      "Average_Sales_Per_Store": 176419868.76923078
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 11015270806,
+      "Number_of_Stores": 68,
+      "Average_Sales_Per_Store": 161989276.55882353
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS100009",
+      "SCN": "호프-간이주점",
+      "Sales_Amount": 10450408955,
+      "Number_of_Stores": 82,
+      "Average_Sales_Per_Store": 127444011.64634146
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300019",
+      "SCN": "의료기기",
+      "Sales_Amount": 368149542,
+      "Number_of_Stores": 3,
+      "Average_Sales_Per_Store": 122716514.0
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300007",
+      "SCN": "육류판매",
+      "Sales_Amount": 817507977,
+      "Number_of_Stores": 7,
+      "Average_Sales_Per_Store": 116786853.85714285
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 12001683878,
+      "Number_of_Stores": 110,
+      "Average_Sales_Per_Store": 109106217.07272728
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS300009",
+      "SCN": "청과상",
+      "Sales_Amount": 838383474,
+      "Number_of_Stores": 8,
+      "Average_Sales_Per_Store": 104797934.25
+    },
+    {
+      "Cluster": 11.0,
+      "SC": "CS100001",
+      "SCN": "한식음식점",
+      "Sales_Amount": 79095976689,
+      "Number_of_Stores": 851,
+      "Average_Sales_Per_Store": 92944743.4653349
+    }
+  ],
+  "12": [
+    {
+      "Cluster": 12.0,
+      "SC": "CS300036",
+      "SCN": "조명용품",
+      "Sales_Amount": 91411929357,
+      "Number_of_Stores": 254,
+      "Average_Sales_Per_Store": 359889485.6574803
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS300002",
+      "SCN": "편의점",
+      "Sales_Amount": 51955299184,
+      "Number_of_Stores": 328,
+      "Average_Sales_Per_Store": 158400302.3902439
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS200007",
+      "SCN": "치과의원",
+      "Sales_Amount": 13900771559,
+      "Number_of_Stores": 90,
+      "Average_Sales_Per_Store": 154453017.32222223
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS300018",
+      "SCN": "의약품",
+      "Sales_Amount": 30789375034,
+      "Number_of_Stores": 220,
+      "Average_Sales_Per_Store": 139951704.7
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS300017",
+      "SCN": "시계및귀금속",
+      "Sales_Amount": 2403508766,
+      "Number_of_Stores": 19,
+      "Average_Sales_Per_Store": 126500461.36842105
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS200006",
+      "SCN": "일반의원",
+      "Sales_Amount": 17617982015,
+      "Number_of_Stores": 142,
+      "Average_Sales_Per_Store": 124070295.88028169
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS200025",
+      "SCN": "자동차수리",
+      "Sales_Amount": 12188570776,
+      "Number_of_Stores": 111,
+      "Average_Sales_Per_Store": 109806943.92792793
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS300020",
+      "SCN": "서적",
+      "Sales_Amount": 2594425283,
+      "Number_of_Stores": 26,
+      "Average_Sales_Per_Store": 99785587.8076923
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS300010",
+      "SCN": "반찬가게",
+      "Sales_Amount": 13762691473,
+      "Number_of_Stores": 147,
+      "Average_Sales_Per_Store": 93623751.5170068
+    },
+    {
+      "Cluster": 12.0,
+      "SC": "CS200008",
+      "SCN": "한의원",
+      "Sales_Amount": 5654091025,
+      "Number_of_Stores": 61,
+      "Average_Sales_Per_Store": 92690016.80327868
+    }
+  ]
+}

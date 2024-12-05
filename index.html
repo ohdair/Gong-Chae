@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic GeoJSON UI</title>
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=bldl8oykat"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.5/proj4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar open">
+      <button id="toggleButton" class="toggle-button">⮞</button>
+      <div id="sidebarContent" class="sidebar-content">
+        <div id="recommendationList" class="sidebar-list"></div>
+        <div id="sidebarBody" class="sidebar-body"></div>
+        <!-- 사이드바 내용이 여기에 동적으로 추가됩니다 -->
+      </div>
+    </div>
+    <div id="map"></div>
+    <div
+      id="loading"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <div
+        style="
+          width: 50px;
+          height: 50px;
+          border: 5px solid #ccc;
+          border-top: 5px solid #000;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        "
+      ></div>
+    </div>
+
+    <!-- 15:15 12월 4일 -->
+    <div id="customAlert" class="alert hidden">
+      <div class="alert-content">
+        <p id="alertMessage" style="white-space: pre-wrap"></p>
+        <button id="alertCloseButton">확인</button>
+      </div>
+    </div>
+
+    <div id="chartPanel" class="chart-panel hidden">
+      <button id="closePanel" class="close-btn">✖</button>
+      <div class="chart-panel-content">
+        <h2 id="commerce-zone"></h2>
+        <h3 id="barChartCanvas-content"></h3>
+        <canvas id="barChartCanvas"></canvas>
+        <h3 id="chart-panel-title">영역별 유동인구</h3>
+        <canvas id="chart1Canvas"></canvas>
+        <h3 id="chart-panel-title">일평균 유동인구</h3>
+        <canvas id="chart2Canvas"></canvas>
+        <h3 id="chart-panel-title">24년 2분기 소비트렌드</h3>
+        <canvas id="pieChartCanvas"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
