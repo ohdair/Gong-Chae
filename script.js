@@ -1,5 +1,6 @@
 let map; // 네이버 지도 객체
 let currentPolygons = []; // 현재 표시 중인 폴리곤 목록
+let seoulPolygons = []; // 서울 표시 폴리곤
 let marker = null; // 클릭한 위치의 마커
 let isProcessing = false; // 반복문 진행 여부
 let isMarkerMoving = true; // 마커가 마우스를 따라다니는지 여부
@@ -42,6 +43,11 @@ function initMap() {
     borderColor: "#ccc",
     borderWidth: 2,
     disableAnchor: false,
+  });
+
+  // JSON 데이터 로드 후 폴리곤 그리기
+  loadPolygonInSeoul().then((polygonData) => {
+    drawPolygonsOnMap(polygonData);
   });
 }
 
@@ -758,6 +764,74 @@ function loadAndGroupGeoJSON() {
     .catch((error) => {
       console.error("GeoJSON 로드 중 오류:", error);
     });
+}
+
+// JSON 파일에서 폴리곤 데이터를 가져오는 함수
+function loadPolygonInSeoul() {
+  const jsonFilePath = "./seoul_area.geojson";
+
+  return fetch(jsonFilePath)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load JSON file: ${response.statusText}`);
+      }
+      return response.json(); // JSON 파싱
+    })
+    .then((data) => {
+      if (!data.features || !Array.isArray(data.features)) {
+        throw new Error("Invalid GeoJSON format: 'features' array not found");
+      }
+
+      // 모든 Feature의 coordinates 추출
+      const polygonData = data.features
+        .map((feature) => {
+          if (feature.geometry && feature.geometry.type === "Polygon") {
+            return feature.geometry.coordinates[0]; // Polygon의 첫 번째 좌표 배열
+          } else if (
+            feature.geometry &&
+            feature.geometry.type === "MultiPolygon"
+          ) {
+            return feature.geometry.coordinates.map((polygon) => polygon[0]); // MultiPolygon의 각 폴리곤 좌표 배열
+          }
+          return null; // 유효하지 않은 경우
+        })
+        .filter(Boolean); // 유효하지 않은 데이터를 제거
+
+      return polygonData; // 추출된 coordinates 데이터 반환
+    })
+    .catch((error) => {
+      console.error("Error loading polygon data:", error);
+    });
+}
+
+// 폴리곤 데이터를 지도에 그리는 함수
+function drawPolygonsOnMap(polygonData) {
+  if (!polygonData || polygonData.length === 0) {
+    console.error("No polygon data available to draw.");
+    return;
+  }
+
+  polygonData.forEach((coordinates) => {
+    // 좌표를 변환하여 네이버 지도 LatLng 형식으로 변환
+    const latLngPath = coordinates.map(
+      ([lng, lat]) => new naver.maps.LatLng(lat, lng)
+    );
+
+    // 폴리곤 객체 생성
+    const polygon = new naver.maps.Polygon({
+      map: map, // 네이버 지도 객체
+      paths: latLngPath, // 폴리곤 경로
+      fillColor: "transparent", // 내부 색상 투명
+      strokeColor: "#2c3e50", // 테두리 색상
+      strokeWeight: 3, // 테두리 두께
+      strokeStyle: "shortdash", // 점선 스타일
+      strokeLineCap: "round",
+    });
+
+    seoulPolygons.push(polygon); // 생성된 폴리곤 객체를 배열에 저장
+  });
+
+  console.log("Polygons drawn on map:", seoulPolygons);
 }
 
 // 마커 재설정 버튼 추가
