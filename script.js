@@ -861,7 +861,7 @@ function openSidebar() {
   // 사이드바 열기
   if (!sidebar.classList.contains("open")) {
     sidebar.classList.add("open");
-    toggleButton.innerText = "⮜";
+    toggleButton.innerText = "◀";
     toggleButton.style.left = "310px"; // 열린 상태에서 버튼 위치
   }
 }
@@ -892,7 +892,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 사이드바 초기 상태 완전히 숨기기
   sidebar.classList.remove("open");
-  toggleButton.innerText = "⮞";
+  toggleButton.innerText = "▶";
   toggleButton.style.left = "10px"; // 사이드바 닫혔을 때 버튼 위치
 
   // 토글 버튼 동작
@@ -901,12 +901,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isOpen) {
       // 사이드바 닫기
       sidebar.classList.remove("open");
-      toggleButton.innerText = "⮞";
+      toggleButton.innerText = "▶";
       toggleButton.style.left = "10px"; // 닫혔을 때 버튼 이동
     } else {
       // 사이드바 열기
       sidebar.classList.add("open");
-      toggleButton.innerText = "⮜";
+      toggleButton.innerText = "◀";
       toggleButton.style.left = "310px"; // 열린 상태에서 버튼 위치
     }
   });
