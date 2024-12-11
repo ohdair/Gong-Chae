@@ -14,21 +14,6 @@ body {
   position: relative; /* 사이드바와 충돌 방지 */
 }
 
-.button {
-  display: block;
-  margin: 5px 0;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #0056b3;
-}
-
 /* 사이드바 */
 .sidebar {
   position: fixed;
@@ -112,7 +97,7 @@ body {
   cursor: pointer;
   font-size: 1rem;
   z-index: 1100; /* 사이드바보다 위에 위치 */
-  transition: left 0.3s ease, background-color 0.3s ease;
+  transition: left 0.3s ease;
 }
 
 .toggle-button:hover {
@@ -185,20 +170,21 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden; /* 전체 영역에서 스크롤 */
+  z-index: 1200;
 }
 
 /* 모바일 뷰 (화면 너비가 768px 이하일 때 적용) */
 @media (max-width: 768px) {
   .chart-panel {
-    top: 0; /* 상단 간격 제거 */
-    right: 0; /* 우측 간격 제거 */
-    left: 0; /* 좌측 간격도 제거 */
-    bottom: 0; /* 하단 간격 제거 */
-    width: 100%; /* 화면 너비에 맞춤 */
-    height: 100%; /* 화면 높이에 맞춤 */
-    max-height: 100vh; /* 최대 높이를 화면 전체로 */
+    position: fixed; /* 화면에 고정 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh; /* 화면 전체 높이 */
+    max-height: 100vh; /* 최대 높이 제한 */
+    width: 100vw; /* 화면 전체 너비 */
     border-radius: 0; /* 둥근 모서리 제거 */
-    padding: 0; /* 내부 여백 제거 */
   }
 }
 
@@ -226,7 +212,7 @@ body {
 .chart-panel-content {
   padding: 0 10px 0px 10px;
   overflow-y: scroll; /* 세로 스크롤 추가 */
-  max-height: calc(80vh - 60px); /* 팝업 높이에서 헤더나 버튼 공간 제외 */
+  /* max-height: calc(80vh - 60px); /* 팝업 높이에서 헤더나 버튼 공간 제외 */
   scrollbar-width: none; /* 스크롤바 숨기기 (Firefox) */
 }
 
