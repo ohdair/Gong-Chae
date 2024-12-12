@@ -899,15 +899,18 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleButton.addEventListener("click", () => {
     const isOpen = sidebar.classList.contains("open");
     if (isOpen) {
-      // 사이드바 닫기
       sidebar.classList.remove("open");
       toggleButton.innerText = "▶";
+      toggleButton.style.left = "10px";
+      toggleButton.style.opacity = "1"; // 아이폰에서 강제로 렌더링
+      toggleButton.style.visibility = "visible";
     } else {
-      // 사이드바 열기
       sidebar.classList.add("open");
       toggleButton.innerText = "◀";
+      toggleButton.style.left = `${sidebar.offsetWidth + 10}px`;
+      toggleButton.style.opacity = "1"; // 동일하게 보이도록 설정
+      toggleButton.style.visibility = "visible";
     }
-    toggleButton.style.left = isOpen ? "10px" : `${sidebar.offsetWidth + 10}px`;
   });
 
   // 지도 및 데이터 로드

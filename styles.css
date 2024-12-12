@@ -82,27 +82,27 @@ body {
 /* 토글 버튼 */
 .toggle-button {
   visibility: visible;
+  opacity: 1; /* 아이폰에서 렌더링 문제를 방지하기 위해 추가 */
   display: block; /* 항상 보이도록 설정 */
   position: fixed;
   top: 50%;
-  left: 0px; /* 기본적으로 사이드바가 숨겨진 상태에서 위치 */
-  transform: translate(-50%, -30%);
+  left: 10px; /* 초기 위치 */
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #2c3e50;
   color: white;
   border: none;
-  /* border-radius: 50%; */
-  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
   font-size: 1rem;
-  z-index: 1100; /* 사이드바보다 위에 위치 */
-  transition: left 0.3s ease;
+  z-index: 1100;
+  transition: left 0.3s ease, opacity 0.3s ease;
+  will-change: left, opacity; /* iOS에서 애니메이션과 렌더링 안정화 */
 }
 
 .toggle-button:hover {
   background-color: #2c3e50;
-  transform: translate(-50%, -30%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* 스크롤바 조건부 표시 */
