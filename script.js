@@ -902,13 +902,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // 사이드바 닫기
       sidebar.classList.remove("open");
       toggleButton.innerText = "▶";
-      toggleButton.style.left = "10px"; // 닫혔을 때 버튼 이동
     } else {
       // 사이드바 열기
       sidebar.classList.add("open");
       toggleButton.innerText = "◀";
-      toggleButton.style.left = "310px"; // 열린 상태에서 버튼 위치
     }
+    toggleButton.style.left = isOpen ? "10px" : `${sidebar.offsetWidth + 10}px`;
   });
 
   // 지도 및 데이터 로드

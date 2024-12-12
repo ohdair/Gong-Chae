@@ -86,7 +86,7 @@ body {
   position: fixed;
   top: 50%;
   left: 0px; /* 기본적으로 사이드바가 숨겨진 상태에서 위치 */
-  transform: translate(-50%, -30%);
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   background-color: #2c3e50;
