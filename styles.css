@@ -86,7 +86,7 @@ body {
   position: fixed;
   top: 50%;
   left: 0px; /* 기본적으로 사이드바가 숨겨진 상태에서 위치 */
-  transform: translateY(-50%);
+  transform: translate(-50%, -30%);
   width: 40px;
   height: 40px;
   background-color: #2c3e50;
@@ -102,7 +102,7 @@ body {
 
 .toggle-button:hover {
   background-color: #2c3e50;
-  transform: translateY(-50%) scale(1.1);
+  transform: translate(-50%, -30%) scale(1.1);
 }
 
 /* 스크롤바 조건부 표시 */
